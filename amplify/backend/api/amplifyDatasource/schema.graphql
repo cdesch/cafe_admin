@@ -1,0 +1,9 @@
+type MenuItem @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  description: String
+  category: String!
+  price: Float
+  calories: Int
+  customer_rating: Float
+}
